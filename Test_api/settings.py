@@ -54,10 +54,20 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Test_api.wsgi.application'
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'killroyka$Test_quest',
+        'USER': 'killroyka',
+        'PASSWORD': 'Sakhabiev2',
+        'HOST': 'killroyka.mysql.pythonanywhere-services.com',
     }
 }
 
@@ -104,3 +114,4 @@ REST_FRAMEWORK = {
 }
 
 # /DRF
+# mysql -u killroyka -h killroyka.mysql.pythonanywhere-services.com -p 'killroyka$killroyka$Test_quest'
