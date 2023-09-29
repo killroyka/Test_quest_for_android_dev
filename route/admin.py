@@ -6,7 +6,7 @@ from .models import Route, RouteType, Photo
 # Register your models here.
 @admin.register(Route)
 class RouteAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('title', 'long', 'lat')
 
 
 @admin.register(RouteType)
