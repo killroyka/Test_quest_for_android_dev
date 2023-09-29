@@ -16,7 +16,7 @@ class RouteAdmin(admin.ModelAdmin):
 
 @admin.register(RouteType)
 class RouteTypeAdmin(admin.ModelAdmin):
-    list_display = ('title',)
+    list_display = ('title_plural',)
     exclude = ('routes',)
     inlines = [
         RouteInline,
