@@ -20,3 +20,4 @@ class Photo(models.Model):
 class RouteType(models.Model):
     routes = models.ManyToManyField(Route, related_name="types")
     title = models.CharField(max_length=40)
+    title_plural = models.CharField(max_length=40)
