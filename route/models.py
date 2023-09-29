@@ -11,6 +11,7 @@ class Route(models.Model):
     lat = models.FloatField()
 
 
+
 class Photo(models.Model):
     route = models.ForeignKey(Route, related_name="photos", on_delete=models.CASCADE)
     photo = models.ImageField()
