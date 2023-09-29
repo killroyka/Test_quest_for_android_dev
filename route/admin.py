@@ -11,9 +11,8 @@ class RouteAdmin(admin.ModelAdmin):
 
 @admin.register(RouteType)
 class RouteTypeAdmin(admin.ModelAdmin):
-    pass
-
+    list_display = ('title',)
 
 @admin.register(Photo)
 class PhotoAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('id', 'photo',)
